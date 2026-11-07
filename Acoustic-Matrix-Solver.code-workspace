@@ -1,0 +1,16 @@
+{
+  "folders": [
+    { "name": "Shared Simulator", "path": "shared" },
+    { "name": "Android App", "path": "android" },
+    { "name": "Windows App", "path": "windows" },
+    { "name": "Tests & Docs", "path": "." }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/build": true,
+      "**/node_modules": true,
+      "**/.gradle": true
+    },
+    "editor.formatOnSave": true
+  }
+}

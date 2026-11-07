@@ -1,0 +1,32 @@
+{
+  "name": "acoustic-matrix-solver",
+  "productName": "Acoustic Matrix Solver",
+  "version": "1.0.0",
+  "description": "Offline software simulation of linear systems, synthetic waves, interference, and FFT.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win zip --x64"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "id.cue.acousticmatrixsolver",
+    "productName": "Acoustic Matrix Solver",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.cjs",
+      "web/**/*",
+      "package.json"
+    ],
+    "artifactName": "Acoustic-Matrix-Solver-Windows-${version}-${arch}.${ext}",
+    "win": {
+      "target": ["zip"],
+      "signAndEditExecutable": false
+    }
+  }
+}
